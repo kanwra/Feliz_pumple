@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feliz cumpleaños 💙</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=Abril+Fatface&family=Rye&family=Special+Elite&family=Playfair+Display:wght@900&family=Bungee&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crema:#f6eee6; --marino:#1f3a7a; --azul:#5b7fb5; --celeste:#a9bdd9; --beige:#d3ccc2; --tinta:#26376b;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--crema);
+  background-image:radial-gradient(rgba(91,127,181,.10) 1.2px,transparent 1.4px),radial-gradient(rgba(31,58,122,.05) 1px,transparent 1.2px);
+  background-size:26px 26px,41px 41px; background-position:0 0,13px 17px;
+  font-family:'Patrick Hand','Caveat',cursive; color:var(--tinta); font-size:1.25rem; line-height:1.6;
+  overflow-x:hidden;
+}
+section{max-width:860px;margin:0 auto;padding:4.5rem 1.4rem;position:relative;text-align:center}
+h2{font-family:'Caveat',cursive;font-size:clamp(2.4rem,7vw,3.6rem);color:var(--marino);margin-bottom:.4rem}
+.sub{opacity:.8;margin-bottom:2rem}
+
+/* ---------- HERO ---------- */
+#inicio{padding-top:3rem;min-height:100vh}
+.titulo{display:flex;flex-wrap:wrap;justify-content:center;gap:.15rem .5rem;margin-bottom:1.6rem}
+.palabra{display:flex;justify-content:center;gap:2px}
+.letra{
+  display:inline-block;padding:.05em .16em;font-size:clamp(3rem,13vw,5.6rem);line-height:1.05;
+  box-shadow:1px 3px 0 rgba(31,58,122,.18);
+  clip-path:polygon(2% 6%,38% 0,70% 4%,99% 1%,97% 48%,100% 95%,60% 100%,30% 96%,0 99%,3% 50%);
+  transition:transform .25s;
+}
+.letra:hover{transform:rotate(0) scale(1.15)!important}
+.carta{
+  font-family:'Caveat',cursive;font-size:clamp(1.35rem,4.2vw,1.75rem);line-height:1.35;max-width:560px;margin:0 auto 1.2rem;
+}
+.carta p{margin-bottom:1rem}
+.cinta{
+  display:inline-block;background:#e9e4dc;color:var(--marino);font-family:'Caveat',cursive;font-weight:700;
+  font-size:clamp(1.8rem,6vw,2.6rem);padding:.2rem 2.2rem;transform:rotate(-2deg);
+  box-shadow:0 3px 8px rgba(31,58,122,.2);position:relative;margin-top:.6rem;
+  clip-path:polygon(0 8%,3% 0,97% 4%,100% 0,98% 50%,100% 96%,3% 100%,0 92%,2% 50%);
+}
+.deco{position:absolute;pointer-events:none;z-index:0}
+.contenido{position:relative;z-index:1}
+.flota{animation:flota 5s ease-in-out infinite}
+@keyframes flota{50%{transform:translateY(-10px) rotate(2deg)}}
+
+.papel{background:#fffaf3;max-width:620px;margin:1.5rem auto 0;padding:2rem 1.6rem;text-align:left;font-family:'Caveat',cursive;font-size:clamp(1.35rem,4vw,1.65rem);line-height:1.4;
+  border:2px dashed var(--celeste);border-radius:8px 22px 10px 24px;box-shadow:5px 6px 0 var(--celeste);transform:rotate(-.6deg)}
+.papel p{margin-bottom:1.1rem}.papel p:last-child{margin:0;color:var(--marino);font-weight:700}
+.cinta{max-width:92%}
+/* ---------- RAZONES ---------- */
+.razones{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem}
+.nota{
+  background:#fffaf3;padding:1.4rem 1.2rem;border:2px dashed var(--celeste);border-radius:6px 18px 8px 20px;
+  box-shadow:3px 4px 0 var(--celeste);transition:transform .25s;
+}
+.nota:nth-child(odd){transform:rotate(-1.6deg)}
+.nota:nth-child(even){transform:rotate(1.4deg)}
+.nota:hover{transform:rotate(0) scale(1.04)}
+.nota b{display:block;font-size:2rem;margin-bottom:.2rem}
+
+/* ---------- RECUERDOS ---------- */
+.fotos{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center}
+.polaroid{
+  background:#fff;padding:.7rem .7rem 1rem;width:230px;box-shadow:0 5px 14px rgba(31,58,122,.22);position:relative;transition:transform .3s;
+}
+.polaroid:nth-child(1){transform:rotate(-4deg)}.polaroid:nth-child(2){transform:rotate(3deg)}.polaroid:nth-child(3){transform:rotate(-2deg)}
+.polaroid:hover{transform:rotate(0) scale(1.06);z-index:2}
+.polaroid::before{
+  content:"";position:absolute;top:-14px;left:50%;width:80px;height:26px;margin-left:-40px;background:rgba(169,189,217,.8);transform:rotate(-3deg);
+}
+.foto{
+  height:230px;background:var(--celeste) var(--img) center/cover;display:grid;place-items:center;color:var(--marino);font-size:1.1rem;
+}
+.polaroid p{font-family:'Caveat',cursive;font-size:1.5rem;margin-top:.5rem;color:var(--marino)}
+
+/* ---------- LÍNEA DE TIEMPO ---------- */
+.linea{max-width:560px;margin:0 auto;text-align:left;border-left:4px dotted var(--azul);padding-left:1.6rem}
+.hito{position:relative;margin-bottom:1.6rem}
+.hito::before{content:"♥";position:absolute;left:-2.6rem;top:-.1rem;color:var(--marino);background:var(--crema);font-size:1.4rem}
+.hito strong{font-family:'Caveat',cursive;font-size:1.8rem;color:var(--marino);display:block}
+
+/* ---------- VALES ---------- */
+.vales{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem}
+.vale{perspective:800px;height:150px;cursor:pointer}
+.vale div{position:absolute;inset:0;display:grid;place-items:center;padding:1rem;border-radius:14px;backface-visibility:hidden;transition:transform .6s}
+.vale{position:relative}
+.vale .f{background:var(--marino);color:#fff;border:3px dashed var(--celeste);font-family:'Caveat',cursive;font-size:1.8rem}
+.vale .b{background:#fffaf3;border:3px dashed var(--azul);transform:rotateY(180deg)}
+.vale.on .f{transform:rotateY(180deg)}.vale.on .b{transform:rotateY(0)}
+
+/* ---------- PASTEL ---------- */
+#pastel svg{width:min(280px,70vw);height:auto;overflow:visible}
+.llama{transform-origin:50% 100%;animation:llama .6s ease-in-out infinite alternate;transition:opacity .4s}
+@keyframes llama{to{transform:scale(1.12,.92) rotate(3deg)}}
+.apagada .llama{opacity:0}
+.boton{
+  font-family:'Caveat',cursive;font-size:1.7rem;font-weight:700;background:var(--marino);color:#fff;border:0;border-radius:40px;
+  padding:.4rem 1.8rem;cursor:pointer;box-shadow:0 4px 0 var(--azul);transition:transform .15s;margin-top:1rem;
+}
+.boton:hover{transform:translateY(-2px)}.boton:active{transform:translateY(3px);box-shadow:0 1px 0 var(--azul)}
+.deseo{margin-top:1.4rem;font-family:'Caveat',cursive;font-size:2rem;color:var(--marino);min-height:3rem}
+
+/* ---------- REGALO FINAL ---------- */
+.caja-btn{background:none;border:0;cursor:pointer;padding:0;animation:flota 3.5s ease-in-out infinite}
+.caja-btn svg{width:min(190px,50vw);height:auto;overflow:visible}
+.tapa{transition:transform .7s cubic-bezier(.3,1.6,.5,1);transform-origin:50% 100%}
+.abierto .tapa{transform:translateY(-46px) rotate(-14deg)}
+.abierto{animation:none}
+#tarjeta{display:none;margin:1.8rem auto 0;max-width:340px}
+#tarjeta.ver{display:block;animation:sale .9s cubic-bezier(.2,1.3,.4,1)}
+@keyframes sale{from{opacity:0;transform:scale(.8) translateY(30px)}}
+#tarjeta img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 10px 26px rgba(31,58,122,.3);transform:rotate(-1.5deg)}
+
+footer{text-align:center;padding:2rem 1rem 4rem;font-family:'Caveat',cursive;font-size:1.8rem;color:var(--marino)}
+.conf{position:fixed;top:-20px;z-index:99;pointer-events:none;animation:cae linear forwards}
+@keyframes cae{to{transform:translateY(110vh) rotate(720deg)}}
+:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. PORTADA ============ -->
+<section id="inicio">
+  <!-- Manchas decorativas (como en la imagen) -->
+  <svg class="deco flota" style="left:-60px;top:55%;width:190px" viewBox="0 0 200 200" fill="none">
+    <path d="M40 30c40-30 110-10 130 40s-10 100-70 110S10 150 20 90c2-26 8-46 20-60z" fill="#7d9ac7"/>
+    <g stroke="#e9e4dc" stroke-width="4" stroke-linecap="round" fill="none"><path d="M45 70c15-12 30 12 45 0s30 12 45 0"/><path d="M40 100c15-12 30 12 45 0s30 12 45 0"/><path d="M45 130c15-12 30 12 45 0s30 12 40 0"/></g>
+  </svg>
+  <svg class="deco flota" style="right:-50px;top:62%;width:170px;animation-delay:-2s" viewBox="0 0 200 200" fill="none">
+    <path d="M30 60c20-40 90-40 120-10s30 90-10 120-100 10-120-30c-8-18-5-60 10-80z" fill="#b9c8e0"/>
+    <g stroke="#5b7fb5" stroke-width="4" stroke-linecap="round" fill="none"><path d="M50 70c15-12 30 12 45 0s30 12 45 0"/><path d="M45 100c15-12 30 12 45 0s30 12 45 0"/></g>
+  </svg>
+
+  <div class="contenido">
+    <!-- ✏️ Cambia el texto del título aquí -->
+    <h1 class="titulo" id="titulo" data-texto="Te amoooo" aria-label="Te amoooo"></h1>
+
+    <div class="carta">
+      <!-- ✏️ ESCRIBE AQUÍ TU MENSAJE -->
+      <p>Feliz cumpleaños mii corazoncito bonito te amo muchísisisismoooo
+        <br>
+      </p>
+    </div>
+
+    <!-- ✏️ Cambia el nombre -->
+    <div class="cinta">Feliz cumpleaños geraaaaldine <span style="font-family:sans-serif;font-size:.8em">(˶&gt;⩊&lt;˶)</span></div>
+
+    <p style="margin-top:1.6rem"><a class="boton" href="cancion.html" style="text-decoration:none;display:inline-block">Tengo una canción para ti</a></p>
+
+    <div style="margin-top:2rem" class="flota">
+      <svg width="130" viewBox="0 0 120 150" aria-hidden="true">
+        <rect x="55" y="22" width="12" height="42" rx="3" fill="#5b7fb5"/><path d="M55 34h12M55 46h12" stroke="#e9e4dc" stroke-width="3"/>
+        <path class="llama" d="M61 4c9 10 8 16 0 18-8-2-9-8 0-18z" fill="#f2b84b"/>
+        <rect x="8" y="64" width="104" height="30" rx="8" fill="#e9e4dc"/>
+        <path d="M8 76c10 10 20-6 30 4s20-6 30 4 20-6 30 4 8 2 14-2" stroke="#5b7fb5" stroke-width="4" fill="none"/>
+        <rect x="0" y="94" width="120" height="50" rx="10" fill="#7d9ac7"/>
+        <g fill="#fff"><circle cx="25" cy="112" r="4"/><circle cx="60" cy="122" r="4"/><circle cx="95" cy="112" r="4"/></g>
+      </svg>
+      <p style="font-size:1.1rem;opacity:.7">desliza hacia abajo, hay sorpresas <br>ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTA ============ -->
+<section id="carta">
+  <h2>cartita para ti :꣓</h2>
+  <div class="papel">
+    <!-- ✏️ Texto tal cual lo escribiste -->
+    <p>Aún recuerdo cuando te felicité tu cumpleaños 15 haceee 729 días, recuerdo que esa vez le había pedido fotitos de tí a Iván (me dio mucha wewencha) para poder hacerte un vídeo bonito para tu pumple. Que lindo poder conocerte tanto tiempo y seguir estando cerca de ti, admiro muchísimo quien eres, cada pedacito tan pequeñito de ti me hace sentirme tan feliz, me hace sentir una calidez que no se puede comparar con nada igual.</p>
+    <p>Cada mensajito tuyo me pone alegré, no sabes todo el amor que te tengo, todo el amor que provocas en mí.</p>
+    <p>Espero que pueda mostrarte cuánto te quiero, que cada día solo pensando cuando será que nos volveremos a ver una vez más, que cada latido de mi corazoncito te pertenece únicamente a tí y que sin dudarlo  puedo decir que te amo incondicionalmente, porque con cada pedacito de ti, lo vale.</p>
+    <p>Feliz cumpleaños geraldine, espero poder siguiéndote felicitando cada cumpleaños y recordarte que te amo muchísimo con cada pedacito que me confirma.𖹭 ֶָ</p>
+  </div>
+</section>
+
+<!-- ============ 2. RAZONES ============ -->
+<section id="razones">
+  <div class="razones">
+    <!-- ✏️ EDITA / AÑADE / BORRA tarjetas -->
+    <div class="nota"><b></b>porque eres la forma mas bonita de demostrar mi amor <br>(っ˶ ˘ ᵕ˘)ˆᵕ ˆ˶ς)</div>
+
+  </div>
+</section>
+
+<!-- ============ 3. RECUERDOS ============ -->
+<section id="recuerdos">
+  <h2>my mon amour</h2>
+  <p class="sub">Felices 17 años</p>
+  <div class="fotos">
+    <!-- ✏️ Pon tus fotos en la misma carpeta y cambia el nombre: url('foto1.jpg') -->
+    <div class="polaroid"><div class="foto" style="--img:url('2.png')"></div><p></p></div>
+    <div class="polaroid"><div class="foto" style="--img:url('3.png')"></div><p></p></div>
+    <div class="polaroid"><div class="foto" style="--img:url('4.png')"></div><p></p></div>
+  </div>
+</section>
+
+
+<!-- ============ 6. PASTEL / DESEO ============ -->
+<section id="pastel">
+  <h2>Pide un deseo</h2>
+  <p class="sub">Y sopla la vela 🕯️</p>
+  <div id="tarta">
+    <svg viewBox="0 0 120 150" aria-hidden="true">
+      <rect x="55" y="22" width="12" height="42" rx="3" fill="#5b7fb5"/><path d="M55 34h12M55 46h12" stroke="#e9e4dc" stroke-width="3"/>
+      <path class="llama" d="M61 4c9 10 8 16 0 18-8-2-9-8 0-18z" fill="#f2b84b"/>
+      <rect x="8" y="64" width="104" height="30" rx="8" fill="#e9e4dc"/>
+      <path d="M8 76c10 10 20-6 30 4s20-6 30 4 20-6 30 4 8 2 14-2" stroke="#5b7fb5" stroke-width="4" fill="none"/>
+      <rect x="0" y="94" width="120" height="50" rx="10" fill="#7d9ac7"/>
+      <g fill="#fff"><circle cx="25" cy="112" r="4"/><circle cx="60" cy="122" r="4"/><circle cx="95" cy="112" r="4"/></g>
+    </svg>
+  </div><br>
+  <button class="boton" id="soplar">Soplar la vela</button>
+  <!-- ✏️ Mensaje final que aparece al soplar -->
+  <p class="deseo" id="deseo"></p>
+  <p><a class="boton" href="cancion.html" style="text-decoration:none;display:inline-block">🎵 Una canción para ti</a></p>
+</section>
+
+<!-- ============ 7. MINI REGALO FINAL ============ -->
+<section id="regalo">
+  <h2>un mini regalito final</h2>
+  <p class="sub">toca la cajita para abrirla</p>
+  <button class="caja-btn" id="caja" aria-label="Abrir el regalo">
+    <svg viewBox="0 0 140 150" aria-hidden="true">
+      <rect x="14" y="62" width="112" height="82" rx="8" fill="#7d9ac7"/>
+      <rect x="62" y="62" width="16" height="82" fill="#e9e4dc"/>
+      <g fill="#fff"><circle cx="34" cy="90" r="4"/><circle cx="34" cy="120" r="4"/><circle cx="106" cy="90" r="4"/><circle cx="106" cy="120" r="4"/></g>
+      <g class="tapa">
+        <rect x="6" y="38" width="128" height="30" rx="8" fill="#1f3a7a"/>
+        <rect x="62" y="38" width="16" height="30" fill="#e9e4dc"/>
+        <path d="M70 38c-26-34-48-12-30 0zM70 38c26-34 48-12 30 0z" fill="#a9bdd9" stroke="#e9e4dc" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="70" cy="36" r="7" fill="#e9e4dc"/>
+      </g>
+    </svg>
+  </button>
+  <div id="tarjeta">
+    <img src="5.jpg" alt="Tarjeta de cumpleaños">
+    <p style="margin-top:1.2rem"><a class="boton" href="5.jpg" download="mi-regalito.jpg" style="text-decoration:none;display:inline-block">Guardar mi regalito</a></p>
+  </div>
+</section>
+
+<footer>Hecho con todo mi amor, para ti y perdon por haberte felicicitado un dia antes (╥ᆺ╥;)<br><small style="font-size:1.2rem;opacity:.7">— karla ❤︎</small></footer>
+
+<script>
+/* ✏️ CONFIGURA AQUÍ */
+const MENSAJE_FINAL = "que todos los deseos de cada velita se cumplan ℓo͟v͟ꫀ ყoυ .ᐟ ";
+
+/* Título con letras de papel recortado (como la imagen) */
+const fuentes = ["Abril Fatface","Rye","Playfair Display","Special Elite","Bungee","Caveat"];
+const papel = [["#5b7fb5","#f6eee6"],["#1f3a7a","#cfd9ec"],["#d3ccc2","#1f3a7a"],["#a9bdd9","#1f3a7a"],["#7d9ac7","#fff"]];
+const t = document.getElementById("titulo");
+t.dataset.texto.split(" ").forEach(pal=>{
+  const w=document.createElement("span");w.className="palabra";w.setAttribute("aria-hidden","true");
+  [...pal].forEach((c,i)=>{
+    const s=document.createElement("span");s.className="letra";s.textContent=c;
+    const p=papel[(i*2+pal.length)%papel.length];
+    s.style.background=p[0];s.style.color=p[1];
+    s.style.fontFamily=`'${fuentes[(i+pal.length)%fuentes.length]}',serif`;
+    s.style.transform=`rotate(${(Math.random()*12-6).toFixed(1)}deg) translateY(${(Math.random()*10-5).toFixed(0)}px)`;
+    w.appendChild(s);
+  });
+  t.appendChild(w);
+});
+
+/* Vales: voltear al tocar */
+document.querySelectorAll(".vale").forEach(v=>v.addEventListener("click",()=>v.classList.toggle("on")));
+
+/* Confeti */
+function confeti(n=70){
+  const col=["#5b7fb5","#1f3a7a","#a9bdd9","#f2b84b","#fff","#d3ccc2"];
+  for(let i=0;i<n;i++){
+    const d=document.createElement("div");d.className="conf";
+    d.style.left=Math.random()*100+"vw";
+    d.style.width=d.style.height=(6+Math.random()*8)+"px";
+    d.style.background=col[i%col.length];
+    d.style.borderRadius=Math.random()>.5?"50%":"2px";
+    d.style.animationDuration=(2.5+Math.random()*2.5)+"s";
+    document.body.appendChild(d);setTimeout(()=>d.remove(),5200);
+  }
+}
+
+/* Soplar la vela */
+document.getElementById("soplar").addEventListener("click",()=>{
+  document.getElementById("tarta").classList.add("apagada");
+  document.getElementById("deseo").textContent=MENSAJE_FINAL;
+  confeti();setTimeout(()=>confeti(50),700);
+});
+
+/* Abrir el regalo final */
+document.getElementById("caja").addEventListener("click",function(){
+  this.classList.add("abierto");
+  document.getElementById("tarjeta").classList.add("ver");
+  confeti(80);
+  setTimeout(()=>document.getElementById("tarjeta").scrollIntoView({behavior:"smooth",block:"center"}),400);
+},{once:true});
+
+confeti(35); // un poquito de confeti al abrir la página
+</script>
+</body>
+</html>

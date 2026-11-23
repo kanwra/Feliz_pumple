@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Una canción para ti 🎵</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--crema:#f6eee6;--marino:#1f3a7a;--azul:#5b7fb5;--celeste:#a9bdd9;--beige:#d3ccc2;--tinta:#26376b}
+*{box-sizing:border-box;margin:0}
+body{
+  background:var(--crema);
+  background-image:radial-gradient(rgba(91,127,181,.10) 1.2px,transparent 1.4px);background-size:26px 26px;
+  font-family:'Patrick Hand','Caveat',cursive;color:var(--tinta);font-size:1.25rem;line-height:1.6;
+  min-height:100vh;overflow-x:hidden;text-align:center;
+}
+main{max-width:620px;margin:0 auto;padding:2.5rem 1.4rem 4rem;position:relative;z-index:1}
+.volver{display:inline-block;text-decoration:none;color:var(--marino);font-family:'Caveat',cursive;font-size:1.5rem;margin-bottom:1rem}
+h1{font-family:'Caveat',cursive;font-size:clamp(2.6rem,9vw,4rem);color:var(--marino);line-height:1.1}
+.cinta{
+  display:inline-block;background:#e9e4dc;color:var(--marino);font-family:'Caveat',cursive;font-weight:700;font-size:1.9rem;
+  padding:.1rem 1.8rem;transform:rotate(-2deg);box-shadow:0 3px 8px rgba(31,58,122,.2);margin:.8rem 0 1.8rem;
+  clip-path:polygon(0 8%,3% 0,97% 4%,100% 0,98% 50%,100% 96%,3% 100%,0 92%,2% 50%);
+}
+/* disco de vinilo */
+.disco{width:min(230px,60vw);margin:0 auto 1.4rem;animation:gira 7s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+.nombre{font-family:'Caveat',cursive;font-size:2.2rem;font-weight:700;color:var(--marino);line-height:1.2}
+.artista{opacity:.75;margin-bottom:1.4rem}
+.reproductor{margin:0 auto 1.4rem;border-radius:16px;overflow:hidden;border:3px dashed var(--celeste);background:#fffaf3;padding:.6rem}
+.reproductor iframe{width:100%;border:0;border-radius:10px;display:block}
+.dedicatoria{
+  background:#fffaf3;padding:1.6rem 1.4rem;border:2px dashed var(--celeste);border-radius:8px 22px 10px 24px;
+  box-shadow:5px 6px 0 var(--celeste);transform:rotate(.6deg);font-family:'Caveat',cursive;font-size:1.65rem;line-height:1.35;text-align:left;margin-bottom:1.8rem;
+}
+.dedicatoria p+p{margin-top:.9rem}
+.boton{
+  font-family:'Caveat',cursive;font-size:1.7rem;font-weight:700;background:var(--marino);color:#fff;border:0;border-radius:40px;
+  padding:.4rem 1.8rem;cursor:pointer;box-shadow:0 4px 0 var(--azul);text-decoration:none;display:inline-block;transition:transform .15s;
+}
+.boton:hover{transform:translateY(-2px)}.boton:active{transform:translateY(3px);box-shadow:0 1px 0 var(--azul)}
+.deco{position:fixed;pointer-events:none;z-index:0;animation:flota 5s ease-in-out infinite}
+@keyframes flota{50%{transform:translateY(-10px) rotate(2deg)}}
+:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<svg class="deco" style="left:-70px;bottom:5%;width:190px" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+  <path d="M40 30c40-30 110-10 130 40s-10 100-70 110S10 150 20 90c2-26 8-46 20-60z" fill="#7d9ac7"/>
+  <g stroke="#e9e4dc" stroke-width="4" stroke-linecap="round" fill="none"><path d="M45 70c15-12 30 12 45 0s30 12 45 0"/><path d="M40 100c15-12 30 12 45 0s30 12 45 0"/></g>
+</svg>
+<svg class="deco" style="right:-60px;top:12%;width:170px;animation-delay:-2s" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+  <path d="M30 60c20-40 90-40 120-10s30 90-10 120-100 10-120-30c-8-18-5-60 10-80z" fill="#b9c8e0"/>
+  <g stroke="#5b7fb5" stroke-width="4" stroke-linecap="round" fill="none"><path d="M50 70c15-12 30 12 45 0s30 12 45 0"/><path d="M45 100c15-12 30 12 45 0s30 12 45 0"/></g>
+</svg>
+
+<main>
+  <a class="volver" href="cumple.html">← volver</a>
+  <h1>Una canción para ti</h1>
+  <div class="cinta" id="para">Para geraldine 💙</div>
+
+  <svg class="disco" viewBox="0 0 200 200" aria-hidden="true">
+    <circle cx="100" cy="100" r="96" fill="#1f3a7a"/>
+    <g fill="none" stroke="#5b7fb5" stroke-width="1.5" opacity=".7"><circle cx="100" cy="100" r="84"/><circle cx="100" cy="100" r="72"/><circle cx="100" cy="100" r="60"/></g>
+    <circle cx="100" cy="100" r="36" fill="#a9bdd9"/>
+    <path d="M100 118c-14-10-20-17-20-24a10 10 0 0 1 20-3 10 10 0 0 1 20 3c0 7-6 14-20 24z" fill="#1f3a7a"/>
+    <circle cx="100" cy="100" r="3" fill="#f6eee6"/>
+  </svg>
+
+  <p class="nombre" id="titulo"></p>
+  <p class="artista" id="artista"></p>
+
+  <div class="reproductor" id="reproductor" hidden></div>
+
+  <div class="dedicatoria" id="dedicatoria"></div>
+
+  <a class="boton" id="escuchar" href="#" target="_blank" rel="noopener">escuchar tu canción</a>
+</main>
+
+<script>
+/* ✏️✏️ CONFIGURA AQUÍ TU CANCIÓN ✏️✏️ */
+const CANCION = {
+  url: "https://youtu.be/t9gbV6_CE0E?si=aTPLLxRjKM7c249F",   // ← PEGA AQUÍ EL LINK (YouTube o Spotify)
+  titulo: "Arcoiris",
+  artista: "Ed maverick",
+  para: "Para la niña mas linda del mundooo",
+  dedicatoria: [                                         // ← cada línea es un párrafo
+    "Me gusta mucho esta cancion, diria que es una de mis favoritas y me gusta aun mas porque cuando suena, pienso en ti ✩♬₊˚."
+  ]
+};
+
+/* ---- no hace falta tocar de aquí para abajo ---- */
+const $ = id => document.getElementById(id);
+$("titulo").textContent = CANCION.titulo;
+$("artista").textContent = CANCION.artista;
+$("para").textContent = CANCION.para;
+$("dedicatoria").innerHTML = CANCION.dedicatoria.map(t => `<p>${t.replace(/</g,"&lt;")}</p>`).join("");
+$("escuchar").href = CANCION.url;
+
+/* Convierte el link en reproductor incrustado */
+(function(){
+  let embed = "", alto = 152;
+  try{
+    const u = new URL(CANCION.url);
+    if(u.hostname.includes("youtu")){
+      const id = u.hostname === "youtu.be" ? u.pathname.slice(1) : (u.searchParams.get("v") || u.pathname.split("/").pop());
+      embed = "https://www.youtube.com/embed/" + id; alto = 220;
+    }else if(u.hostname.includes("spotify.com")){
+      embed = "https://open.spotify.com/embed" + u.pathname.replace(/^\/intl-[a-z]+/,"");
+    }
+  }catch(e){}
+  if(embed){
+    const r = $("reproductor");
+    r.innerHTML = `<iframe src="${embed}" height="${alto}" allow="autoplay; encrypted-media; clipboard-write" loading="lazy" title="Canción"></iframe>`;
+    r.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>
